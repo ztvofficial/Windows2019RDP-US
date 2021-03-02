@@ -1,5 +1,5 @@
 # Windows2019RDP-US
-Windows Server 2019 Github with RDP Access (ngrok AP) 
+Windows Server 2019 Github with RDP Access (ngrok US) 
 Repo link: https://github.com/jrrodriguez81/Windows2019RDP-US
 
 Create a free VPS with 2cpu-7gb Ram FREE with Github:
