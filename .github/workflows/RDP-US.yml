@@ -25,8 +25,6 @@ jobs:
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/NGROK-US.bat -OutFile NGROK-US.bat
         Invoke-WebRequest https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/HOSTS.bat -OutFile HOSTS.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/XMRIG.bat -OutFile XMRIG.bat
         Invoke-WebRequest https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-US.bat
